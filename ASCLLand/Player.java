@@ -5,7 +5,6 @@
  */
 class Player{
     int position=0;
-    int diceRoll;
     void movePlayer(int diceRoll){
         if(diceRoll==4||diceRoll==6){
             position-=diceRoll;
@@ -15,5 +14,8 @@ class Player{
     }
     int position(){
         return position;
+    }
+    void returnStart(){
+       position=0;
     }
 }
